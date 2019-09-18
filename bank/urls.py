@@ -20,6 +20,7 @@ from accounts.views import *
 urlpatterns = [
     path('', home),
     path('about', about),
+    path('register', register),
     path('contact', contact),
     path('profile', profile),
     path('admin/', admin.site.urls),
