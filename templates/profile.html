@@ -4,4 +4,13 @@
     <h2>He is a {{designation}}</h2>
     <h2>His email is {{email}}</h2>
     <h2>He is from {{address}}</h2>
+    <table border="1">
+        {% for i in myusers %}
+        <tr>
+            <td>{{i.first_name}}</td> 
+            <td>{{i.last_name}} </td>
+            <td>{{i.balance}}</td>
+        </tr>
+        {% endfor %}
+    </table>
 {% endblock %}
